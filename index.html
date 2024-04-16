@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>hello-wasm example</title>
+  </head>
+  <body>
+    <script type="module">
+        import init, { one_line_solver } from "./pkg/one_continuous_line.js";
+        init().then(() => {
+            console.log(one_line_solver("1,2/2,5/5,6/6,3/3,1/2,4/3,4/6,4/5,4/2,3", 5, 0));
+        });
+    </script>
+  </body>
+</html>
